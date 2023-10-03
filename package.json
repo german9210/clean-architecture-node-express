@@ -10,7 +10,9 @@
   "author": "German Condori",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "fetch": "^1.1.0",
+    "mongoose": "^7.5.3"
   },
   "devDependencies": {
     "nodemon": "^3.0.1",
