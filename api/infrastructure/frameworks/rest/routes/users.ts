@@ -1,11 +1,9 @@
 import express from 'express';
+import controller from '../../../../interface/controllers/usersController';
 
 const app = express();
 
-/*app.get('/users', getUsers);
+app.get('users/:id', controller.getUserById);
 
-app.get('users/:id', getUserById);
-
-app.post('users/:id', postUser);
-*/
+// app.post('users/:id', postUser);
 export default app;
