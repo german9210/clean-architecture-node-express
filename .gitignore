@@ -1,0 +1,11 @@
+# Dependencies
+node_modules
+
+# Trash
+.vscode
+
+# Dynamically processed files
+build-server
+
+# Environments variables
+env.js
