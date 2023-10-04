@@ -5,8 +5,10 @@
  * Implement logs.
  */
 
+import IUserRepository from "../../interface/contracts/user-repository";
+
 export default class Users {
-    private repository;
+    private repository: IUserRepository;
 
     constructor (repository) {
         this.repository = repository;
