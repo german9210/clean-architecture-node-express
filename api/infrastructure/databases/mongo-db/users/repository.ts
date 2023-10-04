@@ -3,7 +3,7 @@ import UserModel from './model';
 import User from '../../../../entities/user';
 
 export default class UserRepository implements IUserRepository {
-  findById = async (id) => {
+  findById = async (id: string) => {
     const user = await UserModel.findById(id);
     if (!user) {
       throw new Error('not found');
