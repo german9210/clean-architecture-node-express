@@ -1,0 +1,19 @@
+{
+    "include": ["api/**/*", "index.ts", "tests/**/*"],
+    "exclude": ["node_modules", "env"],
+    "compilerOptions": {
+      "baseUrl": "./api",
+      "outDir": "build-server",
+      "moduleResolution": "node",
+      "module": "commonjs",
+      "target": "esnext",
+      "sourceMap": false,
+      "allowJs": true,
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "resolveJsonModule": true,
+      "noUnusedLocals": false
+    }
+  }
+  
