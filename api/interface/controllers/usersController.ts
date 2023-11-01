@@ -1,12 +1,12 @@
 import UserService from '../../application/use-cases/users';
 
-const getUserById = (req, res, next) => {
+const getUserById = async (req, res, next) => {
     try {
         const id = req.params?.id;
-        let usersRepository;
-        const user = new UserService(usersRepository).getUserById(id);
+        const { usersRepository } = res.locals;
+        const user = await new UserService(usersRepository).getUserById(id);
 
-        res.status(200).send(user);
+        res.status(200).json(user);
     } catch (error) {
         next(error);
     }
