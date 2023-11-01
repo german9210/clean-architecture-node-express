@@ -1,3 +1,3 @@
-import httpApp from './api/infrastructure/frameworks/rest';
+import httpApp from './api/infrastructure/frameworks/express';
 
 httpApp();

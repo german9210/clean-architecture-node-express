@@ -5,6 +5,8 @@ import users from './routes/users';
 const httpApp = () => {
     const app = express();
 
+    
+
     // Entry points
     app.use('/users', users);
 
