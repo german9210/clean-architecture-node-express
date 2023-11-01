@@ -1,5 +1,5 @@
 {
-    "include": ["api/**/*", "index.ts", "tests/**/*"],
+    "include": ["api/**/*", "index.ts", ".eslintrc.js"],
     "exclude": ["node_modules", "env"],
     "compilerOptions": {
       "baseUrl": "./api",
